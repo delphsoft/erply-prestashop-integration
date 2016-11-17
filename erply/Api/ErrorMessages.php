@@ -19,6 +19,8 @@ class Erply_Api_ErrorMessages
 		, '1014' => 'Incorrect data type or format. (Attribute "errorField" indicates the invalid input parameter.)'
 		, '1015' => 'Malformed request (eg. parameters containing invalid characters)'
 
+        , '1023' => 'Request has product rows in wrong order, or some rows are missing. When editing a confirmed Inventory Registration, only prices can be updated (not quantities and product IDs), and the request must include all rows.'
+        
 		, '1050' => 'Username/password missing'
 		, '1051' => 'Login failed'
 		, '1052' => 'User has been temporarily blocked because of unsuccessful login attempts'

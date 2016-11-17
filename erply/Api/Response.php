@@ -31,32 +31,6 @@ class Erply_Api_Response
 	}
 
 	/**
-	 * Load all records from server.
-	 * 
-	 * @return GbBox_ErplyBridge_Api_Response
-	 */
-//	public function loadAll()
-//	{
-//		if($this->getTotalRecords() > $this->getRecordsCount()) {
-//			$request = $this->getRequest();
-//			$request['recordsOnPage'] = isset($request['recordsOnPage']) ? (int)$request['recordsOnPage'] : 20;
-//			$nrOfPages = ceil($this->getTotalRecords() / $request['recordsOnPage']);
-//			for($i=2; $i<=$nrOfPages; $i++) {
-//				$request['pageNo'] = $i;
-//				$subRequest = GbBox::getSingleton('ErplyBridge/Api')->callApiFunction( $this->getRequestFunction(), $request );
-//				if(!$subRequest->isError())
-//				{
-//					foreach($subRequest->getRecords() as $subRecord)
-//					{
-//						array_push($this->_apiResponse['records'], $subRecord);
-//					}
-//				}
-//			}
-//			$this->_apiResponse['status']['recordsInResponse'] = $this->getTotalRecords();
-//		}
-//	}
-
-	/**
 	 * @return array
 	 */
 	public function getRequest() {
@@ -247,6 +221,33 @@ class Erply_Api_Response
 		}
 		return false;
 	}
+    
+    /**
+     * Load all records from server.
+     * 
+     * @return GbBox_ErplyBridge_Api_Response
+     */
+//	public function loadAll()
+//	{
+//		if($this->getTotalRecords() > $this->getRecordsCount()) {
+//			$request = $this->getRequest();
+//			$request['recordsOnPage'] = isset($request['recordsOnPage']) ? (int)$request['recordsOnPage'] : 20;
+//			$nrOfPages = ceil($this->getTotalRecords() / $request['recordsOnPage']);
+//			for($i=2; $i<=$nrOfPages; $i++) {
+//				$request['pageNo'] = $i;
+//				$subRequest = GbBox::getSingleton('ErplyBridge/Api')->callApiFunction( $this->getRequestFunction(), $request );
+//				if(!$subRequest->isError())
+//				{
+//					foreach($subRequest->getRecords() as $subRecord)
+//					{
+//						array_push($this->_apiResponse['records'], $subRecord);
+//					}
+//				}
+//			}
+//			$this->_apiResponse['status']['recordsInResponse'] = $this->getTotalRecords();
+//		}
+//	}
+
 }
 
 ?>

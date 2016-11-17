@@ -18,6 +18,9 @@ class Erply_Presta_Order extends Order
 			{
 				// Init Item
 				$itemAry = $orderDetailAry;
+                
+                // Attribute Combination
+                $itemAry['product_attribute_id'] = $orderDetailAry['product_attribute_id'];
 
 				// Calculate prices
 				// final_price is discounted price excluding tax
