@@ -8,7 +8,7 @@ Hiring a PrestaShop expert to do the setup and provide ongoing support is highly
 
 Please see: http://erply.com/integrations-with-partners/erply-integration-with-prestashop/
 
-### Requierments:
+### Requirements:
 PHP 5.5 min
 
 ### Usage:
